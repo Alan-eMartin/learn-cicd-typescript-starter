@@ -1,7 +1,6 @@
 import { describe, expect, test } from "vitest";
 import { getAPIKey } from "src/api/auth";
 
-
 /* Tests for Auth.ts utilities */
 
 /* getAPIKey */
@@ -20,4 +19,4 @@ describe("getAPIKey", () => {
     const headers = { authorization: "ApiKey my-api-key" };
     expect(getAPIKey(headers)).toBe("my-api-key");
   });
-}); 
+});
